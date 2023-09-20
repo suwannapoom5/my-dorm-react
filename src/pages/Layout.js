@@ -2,14 +2,14 @@ import { useState } from "react";
 
 import { Routes, Route } from "react-router-dom";
 
-import HeaderBar from "./layout/HeaderBar";
+import HeaderBar from "../layout/HeaderBar";
 import { CssBaseline, Box } from "@mui/material";
-import SideBar from "./layout/SideBar";
-import Dashboard from "./pages/admin/dashboard/Dashboard";
-import Calender from "./pages/admin/calendar/Calender";
-import News from "./pages/admin/new/New";
+import SideBar from "../layout/SideBar";
+import Dashboard from "./admin/dashboard/Dashboard";
+import Calender from "./admin/calendar/Calender";
+import News from "./admin/new/New";
 
-function App() {
+function Layout() {
   const [isSidebar, setIsSidebar] = useState(true);
   return (
     <>
@@ -33,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default Layout;
